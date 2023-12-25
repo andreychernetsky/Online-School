@@ -20,67 +20,37 @@
     <link rel="stylesheet" href="./../../../css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="header__contacts">
-                    <a class="logo" href="https://gitaramania.by/" target="_blank">gitaramania.by</a>
-                    <div class="phone  phone--footer">
-                        <svg class="phone__icon">
-                            <use xlink:href="#phone">
-                        </svg>
-                        <a  class="phone__tell" href="tel:375444739481" >+375(44) 473-94-81</a>
-                    </div>
-                    <div class="social">
-                      <a href="https://vk.com/id459488160" class="social__vk" target="_blank">
-                          <svg class="icon-vk">
-                              <use xlink:href="#vk">
-                          </svg>
-                      </a>
-                      <a href="https://www.youtube.com/channel/UCf0lyVh5MWFgqo5jWBIupvA" class="social__youtube" target="_blank">
-                          <svg class="icon-yotube">
-                              <use xlink:href="#yotube">
-                          </svg>
-                      </a>
-                  </div>
-                </div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+        <img class="sidebar__img" src="./../../../images/stories/midi.jpg" alt="">
+    </div>
+    <div class="sidebar__content">
+        <div class="profile">
+            <img class="profile__avatar" src="./../../../images/stories/iam.jpg" alt="">
+            <div class="profile__header">
+                <div class="profile__name">Онлайн-школа</div>
+                <div class="profile__prof">Студия экспеиментальных проектов<span
+                        class="profile_span">(СЭП)</span></div>
             </div>
         </div>
-        <div class="container">
-            <div class="header__inner">
-                <aside class="sidebar" id="sidebar">
-                    <div class="sidebar__header">
-                        <img class="sidebar__img" src="./../../../images/stories/midi.jpg" alt="">
-                    </div>
-                    <div class="sidebar__content">
-                        <div class="profile">
-                            <img class="profile__avatar" src="./../../../images/stories/iam.jpg" alt="">
-                            <div class="profile__header">
-                                <div class="profile__name">Онлайн-школа</div>
-                                <div class="profile__prof">Студия экспеиментальных проектов<span
-                                        class="profile_span">(СЭП)</span></div>
-                            </div>
-                        </div>
-                        <h3 class="sidebar__title">Содержание</h3>
-                    </div>
-                    <nav class="nav" id="menu">
-                        <a class="nav__menu-link active" href="./../../module1/module1.html"
-                            target="_blank">модуль1</a>
-                        <a class="nav__menu-link" href="./../../module2/module2.html" target="_blank">модуль2</a>
-                        <a class="nav__menu-link" href="./../../module3/module3.html" target="_blank">модуль3</a>
-                        <a class="nav__menu-link" href="./../../module4/module4.html" target="_blank">модуль4</a>
-                        <a class="nav__menu-link" href="./../../module5/module5.html" target="_blank">модуль5</a>
-                        <a class="nav__menu-link" href="./../../module6/module6.html" target="_blank">модуль6</a>
-                        <a class="nav__menu-link" href="./../../module7/module7.html" target="_blank">модуль7</a>
-                        <a class="nav__menu-link" href="./../../module8/module8.html" target="_blank">модуль8</a>
-                        <a class="nav__menu-link" href="./../../module9/module9.html" target="_blank">модуль9</a>
-                        <a class="nav__menu-link" href="./../../module10/module10.html" target="_blank">модуль10</a>
-                    </nav>
-                </aside>
-                <button class="nav-toggle" id="nav-toggle">Меню</button>
-            </div>
-        </div>
-    </header>
+        <h3 class="sidebar__title">Содержание</h3>
+    </div>
+    <nav class="nav" id="menu">
+      <a class="nav__menu-link active" href="./../../module1/module1.html"
+          target="_blank">модуль1</a>
+      <a class="nav__menu-link" href="./../module2/module2.html" target="_blank">модуль2</a>
+      <a class="nav__menu-link" href="./../module3/module3.html" target="_blank">модуль3</a>
+      <a class="nav__menu-link" href="./../module4/module4.html" target="_blank">модуль4</a>
+      <a class="nav__menu-link" href="./../module5/module5.html" target="_blank">модуль5</a>
+      <a class="nav__menu-link" href="./../module6/module6.html" target="_blank">модуль6</a>
+      <a class="nav__menu-link" href="./../module7/module7.html" target="_blank">модуль7</a>
+      <a class="nav__menu-link" href="./../module8/module8.html" target="_blank">модуль8</a>
+      <a class="nav__menu-link" href="./../module9/module9.html" target="_blank">модуль9</a>
+      <a class="nav__menu-link" href="./../module10/module10.html" target="_blank">модуль10</a>
+  </nav>
+  </aside>
+  <button class="nav-toggle" id="nav-toggle">Меню</button>
+  
   <section class="section">
     <div class="container">
       <div class="section__header">
@@ -109,8 +79,8 @@
         </ul>
       </div>
       <article class="article">
-        <blockquote class="blockquote">
-          <p class="blockquote__text"> Путешествие в тысячу миль начинается с одного шага</p>
+        <blockquote class="blockquote0">
+          <p class="blockquote0__text"> Путешествие в тысячу миль начинается с одного шага</p>
           <footer><city>Дао Дэ Цзин</city></footer>
         </blockquote>
         <h3 class="article__title"><span class="article__span">Тема:</span>Длительности нот.</h3>
@@ -119,12 +89,45 @@
           которые мы рассмотрим в нашей показательной лекции следующие:
         </div>
         <p class="article__text">Длительности нот.</p>
-        <img src="./../pageModule0/photoLessons/photoLes1/1.jpg" alt="" class="article__img">
+        <img class="article__img" src="./../pageModule1/photoLessons/photoLes1/1.jpg" alt="" >
         <p class="article__text">Основные размеры.</p>
-        <img src="./../pageModule0/photoLessons/photoLes1/2.jpg" alt="" class="article__img">
-        <img src="./../pageModule0/photoLessons/photoLes1/3.jpg" alt="" class="article__img">
-        <img src="./../pageModule0/photoLessons/photoLes1/4.jpg" alt="" class="article__img">
+        <img class="article__img" src="./../pageModule1/photoLessons/photoLes1/2.jpg" alt="" >
+        <img class="article__img" src="./../pageModule1/photoLessons/photoLes1/3.jpg" alt="" >
+        <img class="article__img" src="./../pageModule1/photoLessons/photoLes1/4.jpg" alt="" >
+        <p class="article__text">Семь нот.</p>
+        <img class="article__img" src="./../pageModule1/photoLessons/photoLes1/5.jpg" alt="" >
+        <p class="article__text">Цифровка нот.</p>
+        <img class="article__img" src="./../pageModule1/photoLessons/photoLes1/6.jpg" alt="" >
+        <p class="article__text">Открытые струны гитары.</p>
+        <img class="article__img" src="./../pageModule1/photoLessons/photoLes1/7.jpg" alt="" >
       </article>
+        <!-- аккордеон -->
+        <div class="accordion">
+          <div class="accordion__item">
+              <button class="accordion__btn">Сколько нот в музыке?</button>
+              <div class="accordion__panel">
+                  <p class="accordion__text">7 нот</p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <button class="accordion__btn">Какая нота в размере четырех четвертей имеет удар по струне на 1и ?</button>
+              <div class="accordion__panel">
+                  <p class="accordion__text">четвертная нота</p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <button class="accordion__btn">Какая нота в размере четырех четвертей имеет удар по струне на 1и 2и?</button>
+              <div class="accordion__panel">
+                  <p class="accordion__text">Половинная нота</p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <button class="accordion__btn"> Сколько основных линеечек на нотном стане?</button>
+              <div class="accordion__panel">
+                  <p class="accordion__text">на нотном стане пять линеечек.</p>
+              </div>
+          </div>
+      </div>
     </div>
   </div>
   <footer class="footer">
