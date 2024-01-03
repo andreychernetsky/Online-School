@@ -389,14 +389,20 @@ h6 {
 }
 
 .article__title {
+    padding-bottom: 25px;
     font-family: 'Kaushan Script', curcive;
     font-size: 2rem;
     color: #333;
 }
 
-.article__task {}
+.article__task {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
 
-.article__task-span {}
+.article__task-span {
+   
+}
 
 .article__text {
     font-size: 1.8rem;
@@ -813,6 +819,15 @@ h6 {
 }
 
 @media(max-width:768px) {
+    .section__header{
+        padding: 46px 0;
+    }
+    .section__title{
+        font-size: 22px;
+    }
+    .article__title{
+        font-size: 1.7rem;
+    }
     .benefits__inner {
         text-align: center;
     }
