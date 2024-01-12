@@ -7,7 +7,7 @@ btn.addEventListener('click',()=>{
 
 const allButtonAcc = document.querySelectorAll('.accordion__btn');
 allButtonAcc.forEach(btn=>btn.addEventListener('click',()=>{
-  const openPanel = btn.nextElementSibling.classList.contains('.accordion__btn--open');
+  const openPanel = btn.nextElementSibling.classList.contains('accordion__btn--open');
   if(openPanel){
     closeAcc(btn.nextElementSibling);
   }else{
