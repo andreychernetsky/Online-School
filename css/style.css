@@ -214,11 +214,14 @@ h6 {
 .nav-toggle {}
 
 .nav-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
     position: fixed;
     right: 125px;
     display: inline-block;
     vertical-align: top;
-    padding: 8px 3px;
+    padding:3px;
     z-index: 200;
     border: 3px solid #fff;
     background: #eccb0b;
@@ -227,6 +230,7 @@ h6 {
     color: #fff;
     text-decoration: none;
     top: 114px;
+    border-radius: 100%;
     transition: background .1s linear, color .1s linear;
 }
 
@@ -477,9 +481,10 @@ h6 {
 }
 
 .article__img {
+    object-fit: cover;
     margin: 30px 0;
     max-width: 100%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* оформление цитаты */
@@ -627,7 +632,7 @@ h6 {
 
 .accordion__btn {
     width: 100%;
-    background: rgb(182, 8, 8);
+    background: rgb(54, 28, 120);
     border: 1px solid #ddd;
     border-radius: 0;
     color: #fff;
@@ -644,7 +649,7 @@ h6 {
 .accordion__btn:active,
 .accordion__btn:hover,
 .accordion__btn:focus {
-    background: rgb(110, 5, 79);
+    background: rgb(21, 4, 16);
 
 }
 
