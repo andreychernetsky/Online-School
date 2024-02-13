@@ -90,6 +90,10 @@ h6 {
     visibility:visible;
     transition: all 0.2s;
 }
+.span__lesson{
+    font-weight: bolder;
+    color: #1c1c1c;
+}
 .header {
     background-image: url('./../images/stories/fone.jpg');
     background-repeat: no-repeat;
@@ -146,7 +150,7 @@ h6 {
     width: 100%;
     display: block;
     font-weight: bolder;
-    color: rgb(241, 238, 241);
+    color: #f1eef1;
     letter-spacing: 0.25px;
     text-decoration: none;
 }
@@ -305,9 +309,9 @@ display: block;
 .sidebar.open{
 transform: translateX(0);
 }
-.sidebar.active {
+/* .sidebar.active {
     display: block;
-}
+} */
 
 .sidebar__header {
     height: 180px;
