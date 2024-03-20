@@ -39,30 +39,30 @@ const openAcc = (item)=>{
   item.style.padding = '1rem 0 1rem 0';
 }
 
-const topButton = document.querySelector('.topButton');
+// const topButton = document.querySelector('.topButton');
 
-const btnScroll = ()=>{
-  const scrolled = window.scrollY;
-  const chord = document.documentElement.clientHeight;
+// const btnScroll = ()=>{
+//   const scrolled = window.scrollY;
+//   const chord = document.documentElement.clientHeight;
 
-  if(scrolled>chord){
-    topButton.classList.add('topButton__show');
-  }
-  if(scrolled<chord){
-    topButton.classList.remove('topButton__show');
-  }
-}
-const backTop = ()=>{
-  if(window.scrollY>0){
-    window.scrollBy({
-      top: 100,
-      behavior: "smooth",
-    });
-    setTimeout(backTop, 0)
-  }
-}
-window.addEventListener('scroll', btnScroll);
-topButton.addEventListener('click', backTop);
+//   if(scrolled>chord){
+//     topButton.classList.add('topButton__show');
+//   }
+//   if(scrolled<chord){
+//     topButton.classList.remove('topButton__show');
+//   }
+// }
+// const backTop = ()=>{
+//   if(window.scrollY>0){
+//     window.scrollBy({
+//       top: 100,
+//       behavior: "smooth",
+//     });
+//     setTimeout(backTop, 0)
+//   }
+// }
+// window.addEventListener('scroll', btnScroll);
+// topButton.addEventListener('click', backTop);
 
 
 const btnModal = document.querySelectorAll('[data-modal]');
