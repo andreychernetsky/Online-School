@@ -5,39 +5,39 @@
 //   aside.classList.toggle('active');
 // });
 
-const overlay = document.querySelector('.overlay');
-const aside = document.querySelector('.sidebar');
-const btn = document.querySelector('#nav-toggle');
+// const overlay = document.querySelector('.overlay');
+// const aside = document.querySelector('.sidebar');
+// const btn = document.querySelector('#nav-toggle');
 
-btn.addEventListener('click',()=>{
-  aside.classList.add('open');
-  overlay.classList.add('open');
-});
-overlay.addEventListener('click',()=>{
-  aside.classList.remove('open');
-  overlay.classList.remove('open');
-});
+// btn.addEventListener('click',()=>{
+//   aside.classList.add('open');
+//   overlay.classList.add('open');
+// });
+// overlay.addEventListener('click',()=>{
+//   aside.classList.remove('open');
+//   overlay.classList.remove('open');
+// });
 
-const allButtonAcc = document.querySelectorAll('.accordion__btn');
-allButtonAcc.forEach(btn=>btn.addEventListener('click',()=>{
-  const openPanel = btn.nextElementSibling.classList.contains('accordion__btn--open');
-  if(openPanel){
-    closeAcc(btn.nextElementSibling);
-  }else{
-    allButtonAcc.forEach(x=>closeAcc(x.nextElementSibling));
-    openAcc(btn.nextElementSibling)
-  }
-}));
-const closeAcc = (item)=>{
-  item.classList.remove('accordion__btn--open');
-  item.style.maxHeight = '0';
-  item.style.padding = '0';
-}
-const openAcc = (item)=>{
-  item.classList.add('accordion__btn--open');
-  item.style.maxHeight = item.scrollHeight + 'px';
-  item.style.padding = '1rem 0 1rem 0';
-}
+// const allButtonAcc = document.querySelectorAll('.accordion__btn');
+// allButtonAcc.forEach(btn=>btn.addEventListener('click',()=>{
+//   const openPanel = btn.nextElementSibling.classList.contains('accordion__btn--open');
+//   if(openPanel){
+//     closeAcc(btn.nextElementSibling);
+//   }else{
+//     allButtonAcc.forEach(x=>closeAcc(x.nextElementSibling));
+//     openAcc(btn.nextElementSibling)
+//   }
+// }));
+// const closeAcc = (item)=>{
+//   item.classList.remove('accordion__btn--open');
+//   item.style.maxHeight = '0';
+//   item.style.padding = '0';
+// }
+// const openAcc = (item)=>{
+//   item.classList.add('accordion__btn--open');
+//   item.style.maxHeight = item.scrollHeight + 'px';
+//   item.style.padding = '1rem 0 1rem 0';
+// }
 
 // const topButton = document.querySelector('.topButton');
 
@@ -66,11 +66,13 @@ const openAcc = (item)=>{
 
 
 const btnModal = document.querySelectorAll('[data-modal]');
+
 const modal = document.querySelectorAll('.modal');
 
 btnModal.forEach((item)=> {
  item.addEventListener('click',(e)=>{
     const target = e.currentTarget;
+    
     const modalAtt  = target.getAttribute('data-modal');
     const modalId = document.getElementById(modalAtt);
     const modalContent = modalId.querySelector('.modal__content');
@@ -79,17 +81,17 @@ btnModal.forEach((item)=> {
         e.stopPropagation();
     })
     modalId.classList.add('show');
- 
  });
 });
 
-modal.forEach(item=>{
-    item.addEventListener('click',(e)=>{
-        let clickModal = e.currentTarget;
-        closeModal(clickModal);
-    })
-})
+modal.forEach((item)=>{
+ item.addEventListener('click',(e)=>{
+  let clickModal = e.currentTarget;
+  closeModel(clickModal);
+ });
+});
 
-function  closeModal(clickModal) {
-    clickModal.classList.remove('show');
+function closeModel(click){
+ click.classList.remove('show');
 }
+
