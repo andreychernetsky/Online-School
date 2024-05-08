@@ -870,7 +870,7 @@ transform: translateX(0);
     transition: all 0.2s ease-in-out;
     vertical-align: middle;
     white-space: normal;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .accordion__btn:active,
